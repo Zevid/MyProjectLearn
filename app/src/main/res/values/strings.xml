@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hello_world">Hello World</string>
+    <string name="sp_bt_1">主页跳转</string>
+    <string name="sp_bt_2">测试页跳转</string>
+    <string name="text_001">我是测试字符串</string>
+    <string name="text_jb">text渐变</string>
+    <string name="text_intent">网络请求测试</string>
+    <string name="text_text_rx_java">Rxjava学习测试</string>
+    <string name="text_text_retrofit">Retrofit学习测试</string>
+    <string name="text_text_callback">Retrofit学习接口回调</string>
+    <string name="text_jb_text">渐变动画（也叫消失）通常指渐渐的淡出某个UI组件，同时同步地淡入另一个。当App想切换内容或View的情况下，这种动画很有用。渐变简短不易察觉，同时又提供从一个界面到下一个之间流畅的转换。如果在需要转换的时候没有使用任何动画效果，这会使得转换看上去感到生硬而仓促。
+下面是一个利用进度指示渐变到一些文本内容的例子。</string>
+    <string name="title_activity_display_message">主页</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="helloword">HelloWord</string>
+    <string name="hello_word">hello word</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
