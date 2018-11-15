@@ -9,6 +9,10 @@ import java.util.*
 
 
 class SpliahActivity : BaseActivity() {
+    override fun intiTitle(): Int {
+        return 2
+    }
+
     override fun initListener() {
     }
 
@@ -17,11 +21,6 @@ class SpliahActivity : BaseActivity() {
     }
 
     override fun initView() {
-        val mActionBar = supportActionBar
-        mActionBar!!.setHomeButtonEnabled(true)
-        mActionBar.setDisplayHomeAsUpEnabled(true)
-        mActionBar.title = "我是启动页面"
-        tv_splish_hello.text=getString(R.string.hello_word)
 
     }
 
@@ -38,7 +37,7 @@ class SpliahActivity : BaseActivity() {
          * 要执行的操作
          */
         override fun run() {
-            startActivity(Intent(this@SpliahActivity,DisplayMessageActivity::class.java))
+            startActivity(Intent(this@SpliahActivity, DisplayMessageActivity::class.java))
             finish()
         }
     }

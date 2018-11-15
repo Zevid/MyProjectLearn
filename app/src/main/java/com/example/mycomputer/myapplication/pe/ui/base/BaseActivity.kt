@@ -2,6 +2,7 @@ package com.example.mycomputer.myapplication.pe.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.view.WindowManager
 import android.widget.Toast
 
 abstract class BaseActivity : AppCompatActivity() {
@@ -9,10 +10,15 @@ abstract class BaseActivity : AppCompatActivity() {
     protected val TAG = this.javaClass.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        if (intiTitle() == 1) {
+            getSupportActionBar()!!.hide();// 隐藏ActionBar
+        } else if (intiTitle() == 2) {
+            getSupportActionBar()!!.hide();// 隐藏ActionBar
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//remove notification bar  即全屏
+        }
         //设置布局
         setContentView(intiLayout())
         super.onCreate(savedInstanceState)
-
         //初始化控件
         initView()
         //设置数据
@@ -20,6 +26,13 @@ abstract class BaseActivity : AppCompatActivity() {
         //设置响应事件
         initListener()
     }
+
+    /**
+     * 设置Title
+     *
+     * @return
+     */
+    abstract fun intiTitle(): Int
 
     /**
      * 设置布局

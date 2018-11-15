@@ -11,6 +11,10 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 class DisplayMessageActivity : BaseActivity() {
+    override fun intiTitle(): Int {
+        return 1
+    }
+
     private var fragmentPagerAdapter: TabFragmentPagerAdapter? = null
 
 
